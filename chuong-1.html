@@ -164,6 +164,16 @@ main{max-width:720px;margin:0 auto;padding:0 16px 120px}
 @keyframes a2{0%,100%{opacity:0}50%{opacity:1}}
 .still .ap2{opacity:1}
 .end b{white-space:normal;text-align:center;min-width:0;flex:0 1 auto}.end .ln{min-width:16px}
+.fig.in .pop1{animation:pop1 4s ease-in-out infinite}
+@keyframes pop1{0%{transform:scale(.4);opacity:0}25%,85%{transform:scale(1);opacity:1}100%{opacity:0}}
+.fig .grow-x{transform-origin:left center;transform:scaleX(0)}
+.fig.in .grow-x{animation:gx 4s ease-in-out infinite}
+@keyframes gx{0%{transform:scaleX(0)}70%,100%{transform:scaleX(1)}}
+.fig.in .write{animation:wr 2.2s ease-in-out infinite}
+@keyframes wr{0%,100%{transform:translate(0,0)}25%{transform:translate(-30px,20px)}50%{transform:translate(0,40px)}75%{transform:translate(-30px,60px)}}
+.fig.in .tilt{animation:tl 4s ease-in-out infinite}
+@keyframes tl{0%{transform:rotate(-8deg)}40%{transform:rotate(6deg)}70%,100%{transform:rotate(0)}}
+.still .grow-x{transform:none}
 /* chapter reading pages */
 .hero .kickline{color:var(--muted);font-size:15px;margin:4px 20px 0}
 .stoc{background:var(--paper);border-radius:22px;box-shadow:var(--shadow);padding:16px;margin-bottom:28px}
